@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2ab39519-b28f-4f54-a511-94879703804e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49487/PictureService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PictureService.xsd" MetadataType="Schema" ID="79d1ed79-c86e-4c22-bffd-371933096a7a" SourceId="1" SourceUrl="http://localhost:49487/PictureService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PictureService.disco" MetadataType="Disco" ID="0736f6ef-6b20-4d2f-965d-cf4efe3bc483" SourceId="1" SourceUrl="http://localhost:49487/PictureService.svc?disco" />
+    <MetadataFile FileName="PictureService1.xsd" MetadataType="Schema" ID="a07dcfbf-6248-4727-b3be-01ca9b6721af" SourceId="1" SourceUrl="http://localhost:49487/PictureService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PictureService2.xsd" MetadataType="Schema" ID="33d3739d-5f7a-4327-b255-1d11fcf5b69f" SourceId="1" SourceUrl="http://localhost:49487/PictureService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PictureService.wsdl" MetadataType="Wsdl" ID="410526c5-36ac-4b1b-8c78-38ac90926af6" SourceId="1" SourceUrl="http://localhost:49487/PictureService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

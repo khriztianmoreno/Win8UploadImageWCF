@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="UploadFile.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UploadFile"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid
+        Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="107" />
+            <RowDefinition
+                Height="56" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock
+            HorizontalAlignment="Left"
+            TextWrapping="Wrap"
+            Text="FileOpenPicker Sample"
+            VerticalAlignment="Center"
+            FontSize="48"
+            Margin="117,24.7,0,24.3" />
+        <StackPanel
+            Margin="117,10,0,0"
+            Orientation="Horizontal"
+            Grid.Row="1"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left">
+            <Button
+                x:Name="btnOpenFileClick"
+                Content="Open File"
+                Click="OpenFileClick"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="100" />
+            <CheckBox
+                x:Name="chkMultipleFiles"
+                Content="Multiple Files"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Margin="10,0" />
+
+        </StackPanel>
+
+        <GridView
+            x:Name="gvPictures"
+            Margin="0,-3,0,0"
+            Padding="116,0,40,5"
+            Grid.Row="2"
+            SelectionMode="None">
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VariableSizedWrapGrid
+                        Orientation="Vertical"
+                        Margin="0,0,80,0" />
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Image
+                        Source="{Binding PictureImage}"
+                        Margin="10"
+                        Width="180"
+                        Height="100" />
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+
+    </Grid>
+
+</Page>
